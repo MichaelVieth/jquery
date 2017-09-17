@@ -15,7 +15,7 @@ Angular Reddit Clone @ https://github.com/MichaelVieth/angular_novice
 
 APPLICATION INTENT: 
 
-  What it does: 
+  What it does:  
     * Allows a user to manipulate an array of startup companies in the following ways: 
       * Reverse startup  
       * Remove symbols & numbers from startups  
