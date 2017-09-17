@@ -1,13 +1,12 @@
 # JQuery Assignment 1
 
-NAME : Michael Vieth
-
-TODAYS DATE : 17 September 2017
-CSC 436
-HOMEWORK : #1
-COMPLEXITY: Medium
-APPROX HOURS INVESTED IN ASSIGNMENT : 6
-EXPECTED GRADE : A
+NAME : Michael Vieth  
+TODAYS DATE : 17 September 2017  
+CSC 436  
+HOMEWORK : #1  
+COMPLEXITY: Medium  
+APPROX HOURS INVESTED IN ASSIGNMENT : 6  
+EXPECTED GRADE : A  
 
 GITHUB URL : https://github.com/MichaelVieth/jquery_novice/ 
 PARTICIPATION SOURCE CODE : https://github.com/MichaelVieth/angular_novice/ 
