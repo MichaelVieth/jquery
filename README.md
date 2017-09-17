@@ -15,7 +15,7 @@ Angular Reddit Clone @ https://github.com/MichaelVieth/angular_novice
 
 APPLICATION INTENT: 
 
-  What it does:  
+What it does:  
 *  Allows a user to manipulate an array of startup companies in the following ways:  
  * Reverse startups  
  * Remove symbols & numbers from startups  
@@ -23,10 +23,12 @@ APPLICATION INTENT:
  * Toggle background color  
  * Assign random color class (sets the background-image which makes no visible changes to the site)  
  * Toggle startup list to be inline  
-  Bottlenecks:  
-    * Jquery learning curve  
-  Add Ons:  
-    * Added id's to the buttons as they did not exist  
+ 
+Bottlenecks:  
+* Jquery learning curve  
+    
+Add Ons:  
+ * Added id's to the buttons as they did not exist  
   
 Instructions to run application:  
   1. Install Google Chrome  
