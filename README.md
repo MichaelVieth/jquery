@@ -1,5 +1,7 @@
 # JQuery Assignment 1
+
 NAME : Michael Vieth
+
 TODAYS DATE : 17 September 2017
 CSC 436
 HOMEWORK : #1
