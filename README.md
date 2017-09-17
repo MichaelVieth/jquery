@@ -17,10 +17,10 @@ APPLICATION INTENT:
 
   What it does:  
 *  Allows a user to manipulate an array of startup companies in the following ways: 
- * Reverse startups  
- * Remove symbols & numbers from startups  
- * Sort startups alphabetically  
- * Toggle background color  
+  * Reverse startups  
+  * Remove symbols & numbers from startups  
+  * Sort startups alphabetically  
+  * Toggle background color  
  * Assign random color class (sets the background-image which makes no visible changes to the site)  
  * Toggle startup list to be inline  
   Bottlenecks:  
