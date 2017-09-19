@@ -143,10 +143,10 @@
 	});	
     // 6.CREATE A FUNCTION THAT DISPLAYS STARTS AS INLINE ELEMENTS ON CLICK OF CONVERT TO INLINE BUTTON
     $("#inline").click(function (event) {
-		if ($(".startups-container").children('div').children('a').length < 1) {
-			$(".startups-container").children('div').wrapInner( "<a></a>");
+		if ($("div", ".startups-container").css('display') == 'block') {
+			$("div", ".startups-container").css("display", "inline");
 		} else {
-			$(".startups-container").children('div').children('a').contents().unwrap();
+			$("div", ".startups-container").css("display", "block");
 		}
     });	
     //HOMEWORK 1 PROBLEMS END
