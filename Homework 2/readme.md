@@ -33,7 +33,7 @@ Bottlenecks:
     
 Add Ons:  
  * Changed the CSS from background-image to background-color within the color classes
-  
+ 
 Instructions to run application (Part 1):  
   1. Install Google Chrome  
   2. Open HW2_part_1.html within Google Chrome  
