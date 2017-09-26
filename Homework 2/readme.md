@@ -33,12 +33,15 @@ Bottlenecks:
     
 Add Ons:  
  * Changed the CSS from background-image to background-color within the color classes
- 
+
+
 Instructions to run application (Part 1):  
   1. Install Google Chrome  
   2. Open HW2_part_1.html within Google Chrome  
   3. Click buttons to perform actions  
-  4. Reload page to reset  
+  4. Reload page to reset
+
+
 Instructions to run application (Part 2):  
   1. Install Google Chrome  
   2. Browse to jsfiddle.net within google chrome 
