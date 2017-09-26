@@ -47,3 +47,10 @@ Instructions to run application (Part 2):
   2. Browse to jsfiddle.net within google chrome 
   3. Copy and paste the contents of hw2_part2.js into the browser
   4. Click run  
+
+Instructions to run application (Part 3):
+  1. Run npm install  
+  2. Run npm serve
+  3. Install Google Chrome  
+  4. Browse to localhost:4200
+  5. Search for a username on the list (if an email is attached it will pop up within an alert box)
