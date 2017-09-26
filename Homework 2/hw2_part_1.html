@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <div class="root-container">
+        <div class="header">
+            <button id="reverse"> 
+                REVERSE
+            </button>
+            <button id="remove-symbols-numbers"> 
+                REMOVE SYMBOLS & NUMBERS
+            </button>
+            <button id="sort-alphabetically"> 
+                SORT ALPHABETICALLLY
+            </button>
+            <button id="toggle-color"> 
+                TOGGLE COLOR
+            </button>
+            <button id="color-class"> 
+                RANDOM COLOR
+            </button>
+            <button id="inline">
+                CONVERT TO INLINE
+            </button>
+        </div>
+        <div class="main">
+            <div class="startups-container">
+            </div>
+
+        </div>
+        <div class="footer">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<style>
+    .root-container {
+        position: relative;
+    }
+
+    .root-container .header {
+        position: relative;
+    }
+
+    .root-container .main {
+        position: relative;
+    }
+
+    .root-container .footer {
+        position: relative;
+    }
+
+    .startups-container {
+        background-color: gray;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .gold {
+        background-color: gold;
+    }
+</style>
+
+<script>
+    var colors = ['red', 'blue', 'gold'];
+    var chicagoStartupsHTML = [];
+    var chicagoStartups = [
+        '  Interior   Define  ',
+        'Classkick',
+        'teaBOT  .$',
+        'Pritzker Group Venture Capital',
+        'Teln!yx !!',
+        'ShipBob ~~$$$',
+        'Hologram',
+        'Tovala    ',
+        '    MANOR',
+        'ShuttleCloud 999987',
+        'gtrot @@@@@',
+        'DealsGoRound ****',
+        ' Groovebug',
+        'Stage$$$Bloc',
+        'Shiftgig',
+        'ParkWhiz'
+    ];
+	for (var i = 0, len = chicagoStartups.length; i < len; i ++) {
+		document.querySelector(".startups-container").appendChild(document.createElement('div')).textContent = chicagoStartups[i];
+	}
+	function clearElements() {
+		while (document.querySelector(".startups-container").firstChild) {
+			document.querySelector(".startups-container").removeChild(document.querySelector(".startups-container").firstChild);
+		}
+	}
+	function createElements() {
+		return document.querySelector(".startups-container").appendChild(document.createElement('div'));
+	}
+	function elementsAsArray() {
+		return Array.from(document.querySelectorAll('.startups-container > div'));
+	}
+    //HOMEWORK 1 PROBLEMS START
+    // 1.CREATE A FUNCTION THAT REVERSES THE LIST OF STARTUPS ON CLICK OF THE REVERSE BUTTON
+	document.getElementById("reverse").onclick = function(){
+		var startups = elementsAsArray().reverse();
+		clearElements();
+		for (var i = 0; i < startups.length; i ++) {
+			createElements().textContent = startups[i].textContent;
+		}
+	}
+    // 2.CREATE A FUNCTION THAT REMOVES ALL SYMBOLS AND NUMBERS FROM COMPANY NAMES ON CLICK OF REMOVE SYMBOLS & NUMBERS BUTTON 
+    //   Stage$$$Bloc => StageBloc
+	document.getElementById("remove-symbols-numbers").onclick = function(){
+		var startups = elementsAsArray();
+		clearElements();
+		for (var i = 0; i < startups.length; i ++) {
+			createElements().textContent = startups[i].textContent.replace(/[^a-zA-Z\s]/gi,'');
+		}
+	}
+    // 3.CREATE A FUNCTION THAT SORTS STARTUPS IN ALPHABETICAL ORDER ON CLICK OF THE SORT BUTTON
+	document.getElementById("sort-alphabetically").onclick = function(){
+		var startups = elementsAsArray().sort(function (a, b) {
+					return a.textContent.trim().toLowerCase().localeCompare(b.textContent.trim().toLowerCase());
+		});
+		clearElements();
+		for (var i = 0; i < startups.length; i ++) {
+			createElements().textContent = startups[i].textContent;
+		}
+	}
+    // 4.CREATE A FUNCTION THAT TOGGLES THE BACKGROUND COLOR UPON CLICK OF THE TOGGLE COLOR BUTTON
+	document.getElementById("toggle-color").onclick = function(){
+		var elements = document.querySelectorAll('.startups-container > div')
+		for (var i = 0; i < elements.length; i++) {
+			if (elements[i].style.backgroundColor != "red") {
+				elements[i].style.backgroundColor = "red";
+			} else {
+				elements[i].style.backgroundColor = "gray";
+			}
+		}
+	}
+    // 5.CREATE A FUNCTION THAT RANDOMLY SELECTS A COLOR CLASS AND APPLIES IT TO EACH COMPANY NAME WHEN THE COLOR BUTTON IS CLICKED
+	document.getElementById("color-class").onclick = function(){
+		var elements = document.querySelectorAll('.startups-container > div')
+		var supportedColors = colors[Math.floor(Math.random() * 3)];
+		for (var i = 0; i < elements.length; i++) {
+			for (var e = 0; e < colors.length; e++) {
+				if (elements[i].classList.contains(colors[e])) {
+					elements[i].classList.remove(colors[e]);
+				}
+			}
+			elements[i].classList.add(supportedColors);
+		}
+	}
+    // 6.CREATE A FUNCTION THAT DISPLAYS STARTS AS INLINE ELEMENTS ON CLICK OF CONVERT TO INLINE BUTTON
+	document.getElementById("inline").onclick = function(){
+		var elements = document.querySelectorAll('.startups-container > div')
+		for (var i = 0; i < elements.length; i++) {
+			if (elements[i].style.display != "block") {
+				elements[i].style.display = "block";
+			} else {
+				elements[i].style.display = "inline";
+			}
+		}
+	}
+    //HOMEWORK 1 PROBLEMS END
+
+</script>
