@@ -8,7 +8,7 @@ COMPLEXITY: Medium
 APPROX HOURS INVESTED IN ASSIGNMENT : 8  
 EXPECTED GRADE : A  
 
-GITHUB URL : https://github.com/MichaelVieth/jquery_novice/homework%202  
+GITHUB URL : https://github.com/MichaelVieth/jquery_novice/blob/master/Homework%202 
 Homework Part 3 : https://github.com/MichaelVieth/angular_novice/angular-class-dictionary  
 Angular Reddit Clone @ https://github.com/MichaelVieth/angular_novice/angular-reddit  
 
