@@ -1,0 +1,16 @@
+<app-search-text [(searchText)]="searchText"></app-search-text>
+Search here:<input type="text" [(ngModel)]="searchText" placeholder="Search here" /><button (click)="search()">Search</button>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>emailAddress</th>
+	<th>doctorLastName</th>
+  </tr>
+  <tr *ngFor="let entry of patientSearch">
+    <td>{{ entry.firstName }}</td>
+    <td>{{ entry.lastName }}</td>
+    <td>{{ entry.emailAddress }}</td> 
+    <td>{{ entry.doctorLastName }}</td>
+  </tr>
+</table>
