@@ -1,0 +1,6 @@
+<h1>The Animal Kingdom</h1>
+<div *ngFor = "let animalList of animals">
+	<div *ngFor = "let animal of animalList" class="level level_{{animal.pyramidLevel}}">
+		<img src={{animal.photoUrl}} class="image">
+	</div><br /><br /><br />
+</div>
