@@ -1,0 +1,12 @@
+<br />
+<p>In order to search the wiki prepend your search with wiki. In order to search giphy prepend your search with giphy.</p>
+<p>E.G. wiki dog OR giphy dog</p>
+<input type="text" [(ngModel)]="search" placeholder="Search Wikipedia">
+<br />
+<button type="submit"(click)="searchFunction()">Search</button>
+<br />
+<div *ngFor="let results of searchResults">{{ results }}</div>
+
+<div *ngFor="let results of giphysearchResults">
+	<img src="{{ results.images['fixed_height_downsampled'].url }}"/>
+</div>
