@@ -1,0 +1,18 @@
+<div class="cb" *ngIf="!isOpen()">
+	<button type="submit"(click)="toggleChat()">Open Chat</button>
+</div>
+<div class="chat" *ngIf="isOpen()">
+	<div class="container">
+		<p *ngFor="let msg of data">
+			<span class="from" *ngIf="isFrom(msg.type)">
+				{{ msg.msg }}
+			</span>
+			<span class="to" *ngIf="!isFrom(msg.type)">
+				{{ msg.msg }}
+			</span>
+		</p>
+	</div>
+	<input type="text" [(ngModel)]="chat" placeholder="Type here to chat!"><br />
+	<button type="submit"(click)="send(chat)">Send</button>
+	<button type="submit"(click)="toggleChat()">Close</button>
+</div>

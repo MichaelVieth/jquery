@@ -1,0 +1,5 @@
+<div class="login">
+	<input type="text" [(ngModel)]="username" placeholder="username"><br />
+	<input type="password" [(ngModel)]="pass" placeholder="password"><br />
+	<app-twobutton [text1]="'Login'" [text2]="'Forgot Pass'" (click)="loginFunction()"></app-twobutton>
+</div>

@@ -1,0 +1,51 @@
+.to {
+    border: 2px solid #dedede;
+    border-radius: 5px;
+	border-color: #ccc;
+    padding: 3px;
+    margin: 10px 0;
+	margin-left: 75px;
+}
+.from {
+	border: 2px solid #dedede;
+    border-color: #ccc;
+    background-color: #ddd;
+	border-radius: 5px;
+	padding: 3px;
+    margin: 10px 0;
+
+}
+
+.container {
+	margin: 8px 0;
+    border: none;
+    cursor: pointer;
+	width: 200px;
+}
+
+.chat {
+	position:absolute;
+    bottom:0;
+    right:0;
+	border: 2px solid #dedede;
+}
+
+.cb {
+	position:absolute;
+    bottom:0;
+    right:0;
+	border: 2px solid #dedede;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
