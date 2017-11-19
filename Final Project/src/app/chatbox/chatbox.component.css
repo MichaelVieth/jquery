@@ -1,0 +1,56 @@
+.to {
+    border: 2px solid #dedede;
+    border-radius: 5px;
+	border-color: #ccc;
+    padding: 3px;
+	margin-left: 110px;
+	background-color: lightgrey;
+	display: inline-block;
+}
+.from {
+	border: 2px solid #dedede;
+    border-color: #ccc;
+    background-color: #ddd;
+	border-radius: 5px;
+	padding: 3px;
+	background-color: gray;
+	display: inline-block;
+	width: 100px;
+}
+
+.container {
+	margin: 8px 0;
+    border: none;
+    cursor: pointer;
+	width: 250px;
+	height: 400px;
+	overflow-y: scroll;
+}
+
+.chat {
+	position:absolute;
+    bottom:0;
+    right:0;
+	border: 2px solid #dedede;
+	background-color: lightgoldenrodyellow;
+}
+
+.cb {
+	position:absolute;
+    bottom:0;
+    right:0;
+	border: 2px solid #dedede;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,15 @@
+<h1>{{ summary }}</h1>
+
+<p>Below you may see all the movies currently available!</p>
+<table>
+  <tr>
+    <th>Movie Title</th>
+    <th>Total 2016 Votes</th> 
+    <th>Total 2017 Votes</th>
+  </tr>
+  <tr *ngFor="let movie of dataService.movies">
+    <td>{{ movie.title }}</td>
+	<td>{{ movie.votes2016 }}</td>
+	<td>{{ movie.votes2017 }}</td>
+  </tr>
+</table>

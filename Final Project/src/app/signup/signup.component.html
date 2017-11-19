@@ -1,0 +1,11 @@
+<div class="login">
+	<p>Please fill out the information below:</p>
+	Username: <input type="text" [(ngModel)]="username"><br />
+	Name: <input type="text" [(ngModel)]="name"><br />
+	Password: <input type="text" [(ngModel)]="pass"><br />
+	Email: <input type="text" [(ngModel)]="email"><br />
+	Address: <input type="text" [(ngModel)]="address"><br />
+	Profile Link: <input type="text" [(ngModel)]="profileimg"><br />
+	<img src={{profileimg}} class="image"><br />
+	<button type="submit"(click)="register()">Save Changes</button>
+</div>

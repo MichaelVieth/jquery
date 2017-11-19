@@ -1,0 +1,13 @@
+
+<div class="login">
+	<div *ngIf="!isAuthd()">
+		The default credentials are: morpheus : password.<br />
+		<input type="text" [(ngModel)]="username" placeholder="username"><br />
+		<input type="password" [(ngModel)]="pass" placeholder="password"><br />
+		<p style="color:red"> {{ message }}</p>
+		<app-twobutton [text1]="'Login'" [text2]="'Forgot Pass'" (click)="loginFunction()"></app-twobutton><br /><br />
+	</div>
+	<div *ngIf="isAuthd()">
+		<h1>Browse to your user profile!</h1>
+	</div>
+</div>
